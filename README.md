@@ -1,4 +1,4 @@
-danielcreid.githib.io
+danielcreid.github.io
 =====================
 
-My personal site
+Eventually, this will be my personal site
