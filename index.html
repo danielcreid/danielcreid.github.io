@@ -1,0 +1,12 @@
+---
+title: This is the homepage
+layout: default
+---
+
+<h1>This is the homepage</h1>
+
+<ul>
+{% for post in site.posts %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
+</ul>
