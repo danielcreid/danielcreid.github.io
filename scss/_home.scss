@@ -1,0 +1,50 @@
+.content {
+    max-width: 525px;
+    padding: 20px 20px 20px 30px;
+
+    @include breakpoint(small) {
+        position: relative;
+        top: 50%;
+        max-width: 475px;
+        padding: 0;
+
+        @include transform(translateY(-60%));
+    }
+
+    @include breakpoint(medium) {
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+}
+
+.intro {
+    &__hello { display: block; }
+
+    &__my-name {
+        display: inline-block;
+        margin-top: 3px;
+        margin-top: 0.3rem;
+        font-family: 'bebas_neueregular', sans-serif;
+        font-size: 64px;
+        font-size: 6.4rem;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 0.925;
+    }
+}
+
+.about {
+    margin-top: 5px;
+    margin-top: 0.5rem;
+    font-size: 23px;
+    font-size: 2.3rem;
+    line-height: 1.4;
+
+    a { font-weight: 700; }
+}
+
+.contact {
+    margin-top: 12px;
+    margin-top: 1.2rem;
+}

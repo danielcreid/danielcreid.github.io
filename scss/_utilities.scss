@@ -1,0 +1,60 @@
+//////////////////////////////////////////////////
+//
+// Easy media queries
+//
+//////////////////////////////////////////////////
+
+$breakpoints: (
+  'small'  : ( min-width:  563px ),
+  'medium' : ( min-width:  768px ),
+  'large'  : ( min-width: 1024px )
+);
+
+@mixin breakpoint($name) {
+  @if map-has-key($breakpoints, $name) {
+    @media #{inspect(map-get($breakpoints, $name))} {
+      @content;
+    }
+  }
+
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Please make sure it is defined in `$breakpoints` map.";
+  }
+}
+
+
+
+//////////////////////////////////////////////////
+//
+// Variables
+//
+//////////////////////////////////////////////////
+
+$base__font--family: 'Roboto', sans-serif;
+$base__font--color: #333;
+$base__font--size: 62.5%;
+$base__font--weight: 400;
+$base__font--style: normal;
+
+$color__brand--primary: #ff6b6b;
+
+
+//////////////////////////////////////////////////
+//
+// Placeholders
+//
+//////////////////////////////////////////////////
+
+%clearfix { @include clearfix; }
+
+%visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
