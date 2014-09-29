@@ -1,15 +1,25 @@
-var gulp = require('gulp');
-var plugins = require('gulp-load-plugins')();
+var gulp = require('gulp'),
+    rubySass = require('gulp-ruby-sass'),
+    jekyll = require('gulp-jekyll'),
+    del = require('del');
 
 gulp.task('styles', function() {
-    return gulp.src('styles/styles.scss')
-        .pipe(plugins.rubySass())
-        .pipe(gulp.dest(''))
-        .pipe(plugins.notify({ message: 'Styles task complete' }));
+    gulp.src('assets/source/scss/styles.scss')
+        .pipe(rubySass())
+        .pipe(gulp.dest('assets/build'));
+});
+
+gulp.task('copyfonts', function() {
+    gulp.src('assets/source/fonts/**/*.*')
+        .pipe(gulp.dest('assets/build/fonts'));
+});
+
+gulp.task('clean', function(cb) {
+    del(['assets/build/**/*.*'], cb);
 });
 
 gulp.task('watch', function() {
-  gulp.watch('styles/**/*.scss', ['styles']);
+    gulp.watch('assets/source/scss/**/*.scss', ['styles']);
 });
 
-gulp.task('default', ['styles', 'watch']);
+gulp.task('default', ['clean', 'copyfonts', 'styles', 'watch']);
