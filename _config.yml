@@ -4,3 +4,6 @@ url: http://www.danielcreid.com
 permalink: /:title
 paginate: 10
 exclude: ['gulpfile.js', 'package.json', 'CNAME', 'LICENSE', 'README', 'node_modules', 'assets/source/**', 'assets/styles.css.map']
+gems:
+    - jekyll-sitemap
+    - jekyll-redirect-from
