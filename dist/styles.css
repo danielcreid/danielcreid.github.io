@@ -43,8 +43,8 @@ table {
 
 @font-face {
   font-family: 'bebas_neueregular';
-  src: url("assets/bebasneue-webfont.eot");
-  src: url("assets/bebasneue-webfont.eot?#iefix") format("embedded-opentype"), url("assets/bebasneue-webfont.woff") format("woff"), url("assets/bebasneue-webfont.ttf") format("truetype"), url("assets/bebasneue-webfont.svg#bebas_neueregular") format("svg");
+  src: url("fonts/bebasneue-webfont.eot");
+  src: url("fonts/bebasneue-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/bebasneue-webfont.woff") format("woff"), url("fonts/bebasneue-webfont.ttf") format("truetype"), url("fonts/bebasneue-webfont.svg#bebas_neueregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 *,

@@ -1,12 +1,11 @@
 var gulp = require('gulp'),
     rubySass = require('gulp-ruby-sass'),
-    jekyll = require('gulp-jekyll'),
     del = require('del');
 
 gulp.task('styles', function() {
-    gulp.src('assets/source/scss/styles.scss')
+    gulp.src('source/styles.scss')
         .pipe(rubySass())
-        .pipe(gulp.dest('assets/build'));
+        .pipe(gulp.dest('dist'));
 });
 
 gulp.task('jekyll', function () {
@@ -14,17 +13,17 @@ gulp.task('jekyll', function () {
 });
 
 gulp.task('clean', function(cb) {
-    del(['assets/build/**/*.*'], cb);
+    del(['dist/*'], cb);
 });
 
 gulp.task('copyfonts', function() {
-    gulp.src('assets/source/fonts/**/*.*')
-        .pipe(gulp.dest('assets/build/fonts'));
+    gulp.src('source/fonts/**/*.*')
+        .pipe(gulp.dest('dist/fonts'));
 });
 
 gulp.task('watch', function() {
-    gulp.watch(['./_drafts/**', './_includes/**', './_layouts/**', './_posts/**', 'index.html'], ['jekyll']);
-    gulp.watch('assets/source/scss/**/*.scss', ['styles']);
+    gulp.watch(['_drafts/**', '_includes/**', '_layouts/**', '_posts/**', 'index.html'], ['jekyll']);
+    gulp.watch('source/**/*.scss', ['styles']);
 });
 
-gulp.task('default', ['clean', 'jekyll', 'copyfonts', 'styles', 'watch']);
+gulp.task('default', ['clean', 'copyfonts', 'styles', 'jekyll', 'watch']);

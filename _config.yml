@@ -3,7 +3,7 @@ description: I am a Web Designer / Front-end Developer currently living and work
 url: http://www.danielcreid.com
 permalink: /:title
 paginate: 10
-exclude: ['gulpfile.js', 'package.json', 'CNAME', 'LICENSE', 'README', 'node_modules', 'assets/source/**', 'assets/styles.css.map']
+exclude: ['gulpfile.js', 'package.json', 'CNAME', 'LICENSE', 'README', 'node_modules', 'source', 'dist/styles.css.map']
 gems:
     - jekyll-sitemap
     - jekyll-redirect-from
