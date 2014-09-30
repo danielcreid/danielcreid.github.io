@@ -1,6 +1,5 @@
 var gulp = require('gulp'),
-    rubySass = require('gulp-ruby-sass'),
-    del = require('del');
+    rubySass = require('gulp-ruby-sass');
 
 gulp.task('styles', function() {
     gulp.src('source/styles.scss')
@@ -9,11 +8,7 @@ gulp.task('styles', function() {
 });
 
 gulp.task('jekyll', function () {
-    require('child_process').exec('jekyll serve --watch');
-});
-
-gulp.task('clean', function(cb) {
-    del(['dist/*'], cb);
+    require('child_process').exec('jekyll serve');
 });
 
 gulp.task('copyfonts', function() {
@@ -26,4 +21,4 @@ gulp.task('watch', function() {
     gulp.watch('source/**/*.scss', ['styles']);
 });
 
-gulp.task('default', ['clean', 'copyfonts', 'styles', 'jekyll', 'watch']);
+gulp.task('default', ['copyfonts', 'styles', 'jekyll', 'watch']);
