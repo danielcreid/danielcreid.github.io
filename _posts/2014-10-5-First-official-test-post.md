@@ -1,6 +1,6 @@
 ---
-layout: post
-title: First official test post
+layout: article
+title: First official test article
 ---
 
 # {{ page.title }}

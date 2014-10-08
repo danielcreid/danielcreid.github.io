@@ -1,11 +1,15 @@
 var gulp = require('gulp'),
     concat = require('gulp-concat'),
     uglify = require('gulp-uglify'),
+    autoprefixer = require('gulp-autoprefixer'),
     rubySass = require('gulp-ruby-sass');
 
 gulp.task('styles', function() {
     gulp.src('source/styles.scss')
-        .pipe(rubySass())
+        .pipe(rubySass({style: 'compressed'}))
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions', 'ie >= 9']
+        }))
         .pipe(gulp.dest('dist'));
 });
 

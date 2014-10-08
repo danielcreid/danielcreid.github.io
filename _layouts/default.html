@@ -9,12 +9,15 @@
 
     <link href="http://www.danielcreid.com/feed.xml" rel="alternate" type="application/atom+xml">
     <link rel="stylesheet" href="/dist/styles.css">
-    <link href="http://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" type="text/css">
+    <script src="//use.typekit.net/tgy0rrw.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
 </head>
 <body class="language-markup">
     {% include header.html %}
 
     {{ content }}
+
+    {% include recent-articles.html %}
 
     {% include footer.html %}
 

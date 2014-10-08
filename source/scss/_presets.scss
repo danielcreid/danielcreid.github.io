@@ -1,0 +1,32 @@
+//////////////////////////////////////////////////
+//
+// Presets
+//
+//////////////////////////////////////////////////
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: $base-font--family;
+    color: $base-font--color;
+    font-size: $base-font--size;
+    font-weight: $base-font--weight;
+    font-style: $base-font--style;
+    line-height: 1;
+}
+
+html,
+body { height: 100%; }
+
+img { max-width: 100%; }
+
+a {
+    color: $brand-color--action;
+    text-decoration: none;
+
+    &:hover { text-decoration: underline; }
+}

@@ -1,26 +1,52 @@
 //////////////////////////////////////////////////
 //
-// Easy media queries
+// Functions
 //
 //////////////////////////////////////////////////
 
-$breakpoints: (
-  'small'  : ( min-width:  563px ),
-  'medium' : ( min-width:  768px ),
-  'large'  : ( min-width: 1024px )
-);
-
-@mixin breakpoint($name) {
-  @if map-has-key($breakpoints, $name) {
-    @media #{inspect(map-get($breakpoints, $name))} {
-      @content;
+@function map-deep-get($map, $keys...) {
+    @each $key in $keys {
+        $map: map-get($map, $key);
     }
-  }
 
-  @else {
-    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
-        + "Please make sure it is defined in `$breakpoints` map.";
-  }
+    @return $map;
+}
+
+
+//////////////////////////////////////////////////
+//
+// Placeholders
+//
+//////////////////////////////////////////////////
+
+%clearfix {
+    &:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+
+
+
+//////////////////////////////////////////////////
+//
+// Mixins
+//
+//////////////////////////////////////////////////
+
+@mixin clearfix($pseudo: after) {
+    &:#{$pseudo} {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin mq($value, $property: 'min-width', $media: 'screen') {
+    @media #{$media} and ($property: $value) {
+        @content;
+    }
 }
 
 
@@ -31,30 +57,20 @@ $breakpoints: (
 //
 //////////////////////////////////////////////////
 
-$base__font--family: 'Roboto', sans-serif;
-$base__font--color: #333;
-$base__font--size: 62.5%;
-$base__font--weight: 400;
-$base__font--style: normal;
+$screen--small: 768px;
+$screen--medium: 1024px;
+$screen--large: 1280px;
 
-$color__brand--primary: #ff6b6b;
+$gutter--small: 10px;
+$gutter--medium: 20px;
+$gutter--large: 30px;
 
+$base-font--family: 'jaf-bernino-sans', sans-serif;
+$base-font--color: #000;
+$base-font--size: 100%;
+$base-font--weight: 400;
+$base-font--style: normal;
 
-//////////////////////////////////////////////////
-//
-// Placeholders
-//
-//////////////////////////////////////////////////
+$brand-color--primary: #ff6b6b;
 
-%clearfix { @include clearfix; }
-
-%visually-hidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
+$brand-color--action: $brand-color--primary
