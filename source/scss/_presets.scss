@@ -16,17 +16,48 @@ html {
     font-size: $base-font--size;
     font-weight: $base-font--weight;
     font-style: $base-font--style;
-    line-height: 1;
+    line-height: $line-height;
 }
 
 html,
 body { height: 100%; }
 
+body { overflow-x: hidden; }
+
 img { max-width: 100%; }
 
 a {
     color: $brand-color--action;
+    font-weight: 700;
     text-decoration: none;
 
     &:hover { text-decoration: underline; }
+}
+
+
+.site-wrap { max-width: $site--width; }
+
+.footer-push {
+    @extend %clearfix;
+    min-height: calc(100% - #{$footer--height});
+}
+
+.section-wrap {
+    position: relative;
+}
+
+.section-content {
+    padding: $gutter--small;
+    //padding-right: $gutter--large;
+    //padding-left: $gutter--large;
+}
+
+
+.sidebar-push {
+    @include mq($screen--medium) {
+        float: right;
+        width: $content--width;
+        //margin-left: $sidebar--width + $gutter--large;
+        overflow: hidden;
+    }
 }

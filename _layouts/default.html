@@ -13,11 +13,18 @@
     <script>try{Typekit.load();}catch(e){}</script>
 </head>
 <body class="language-markup">
-    {% include header.html %}
+    <div class="site-wrap footer-push">
+       {% include header.html %}
 
-    {{ content }}
+        <div class="section-wrap sidebar-push">
+            <div class="section-content">
+                {{ content }}
+            </div>
+        </div>
 
-    {% include recent-posts.html %}
+        {% include recent-posts.html %}
+    </div>
+
 
     {% include footer.html %}
 

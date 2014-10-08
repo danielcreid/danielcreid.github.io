@@ -1,0 +1,6 @@
+.site-header {
+    @include mq($screen--medium) {
+        float: left;
+        width: $sidebar--width;
+    }
+}
