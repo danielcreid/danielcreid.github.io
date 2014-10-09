@@ -16,13 +16,21 @@
     <div class="site-wrap footer-push">
        {% include header.html %}
 
-        <div class="section-wrap sidebar-push">
+        <div class="section-wrap section--main-content">
             <div class="section-content">
                 {{ content }}
             </div>
         </div>
 
         {% include recent-posts.html %}
+
+        {% if page.comments %}
+        <div class="section-wrap section--main-content">
+            <div class="section-content">
+            {% include comments.html %}
+            </div>
+        </div>
+        {% endif %}
     </div>
 
 

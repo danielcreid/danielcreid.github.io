@@ -35,7 +35,10 @@ a {
 }
 
 
-.site-wrap { max-width: $site--width; }
+.site-wrap {
+    max-width: $site--width;
+    padding: $gutter--small;
+}
 
 .footer-push {
     @extend %clearfix;
@@ -47,17 +50,15 @@ a {
 }
 
 .section-content {
-    padding: $gutter--small;
+    //padding: $gutter--small;
     //padding-right: $gutter--large;
     //padding-left: $gutter--large;
 }
 
 
-.sidebar-push {
+.section--main-content {
     @include mq($screen--medium) {
         float: right;
         width: $content--width;
-        //margin-left: $sidebar--width + $gutter--large;
-        overflow: hidden;
     }
 }
