@@ -1,5 +1,5 @@
 # How to get started
-*You must have ruby and Node installed before you can begin.*
+*You must have Ruby and Node installed before you can begin.*
 
 1. Get the repo.
 2. Open a command window in the root of the repo.
