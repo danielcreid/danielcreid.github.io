@@ -1,9 +1,8 @@
 ---
 layout: post
-title: First official test article
+title: First official test post
 ---
 
-# {{ page.title }}
 Check out this intro text. I bet it's going to be so awesome!
 
 ## Here's a second-level header

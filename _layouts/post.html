@@ -5,8 +5,8 @@ comments: true
 ---
 
 <article class="post">
-    <p class="post__date">{{ post.date | date: "%B %-d, %Y" }}</p>
-    <h1 class="post__title">{{ post.title }}</h1>
+    <p class="post__date">{{ page.date | date: "%B %-d, %Y" }}</p>
+    <h1 class="post__title">{{ page.title }}</h1>
 
     {{ content }}
 </article>
