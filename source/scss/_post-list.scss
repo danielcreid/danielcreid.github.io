@@ -1,0 +1,29 @@
+.post-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+        margin-top: 2rem;
+
+        &:first-child { margin-top: 0; }
+    }
+}
+
+.post-list__title {
+    margin-bottom: 0;
+}
+
+.post-list__meta {
+    margin: 0;
+    font-size: 1.4rem;
+    color: #999;
+}
+
+.post-list--compact {
+    li {
+        margin-top: 1rem;
+
+        &:first-child { margin-top: 0; }
+    }
+}

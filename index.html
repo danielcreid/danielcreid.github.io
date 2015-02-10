@@ -1,7 +1,25 @@
 ---
 layout: default
 ---
+<h1 class="h2">Articles</h1>
 
-{% for post in site.posts limit:1 %}
-{{ post.content }}
-{% endfor %}
+<ol class="post-list">
+    {% for post in paginator.posts %}
+    <li>
+        <p class="post-list__meta">{{ post.date | date: "%B %-d, %Y" }}</p>
+        <h2 class="post-list__title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    </li>
+    {% endfor %}
+
+    {% if paginator.total_pages > 1 %}
+    <li class="pagination">
+        {% if paginator.previous_page %}
+            <a href="{{ paginator.previous_page_path }}" class="pagination__previous btn btn--primary">Newer articles</a>
+        {% endif %}
+
+        {% if paginator.next_page %}
+            <a href="{{ paginator.next_page_path }}" class="pagination__next btn btn--primary">Older articles</a>
+        {% endif %}
+    </li>
+    {% endif %}
+</ol>

@@ -2,7 +2,7 @@ name: Daniel Reid
 description: I am a Web Designer / Front-end Developer currently living and working in Milwaukee, WI.
 url: http://www.danielcreid.com
 permalink: /:title
-paginate: 10
+paginate: 2
 exclude: ['gulpfile.js', 'package.json', 'CNAME', 'LICENSE', 'README', 'node_modules', 'source']
 gems:
     - jekyll-sitemap

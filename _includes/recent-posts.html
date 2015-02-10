@@ -1,11 +1,11 @@
-<aside class="section-wrap recent-posts">
-    <div class="section-content">
-        <h2>Recent articles</h2>
-        <ol>
-            {% for post in site.posts limit:5 %}
-            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-            {% endfor %}
-            <li><a href="/archive.html">View all</a></li>
-        </ul>
-    </div>
-</aside>
+<h2>Recent articles</h2>
+<ol class="post-list post-list--compact">
+    {% for post in site.posts limit:3 %}
+    <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+    <li>
+        <a href="/" class="btn btn--primary">View all articles</a
+    </li>
+</ul>

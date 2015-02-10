@@ -11,18 +11,31 @@
 }
 
 html {
-    font-family: $base-font--family;
-    color: $base-font--color;
-    font-size: $base-font--size;
-    font-weight: $base-font--weight;
-    font-style: $base-font--style;
-    line-height: $line-height;
+    font-family: 'Open Sans', sans-serif;
+    color: #000;
+    font-size: 62.5%;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.618;
 }
 
 html,
 body { height: 100%; }
 
-body { overflow-x: hidden; }
+body {
+    overflow-x: hidden;
+    font-size: 1.6rem;
+
+    &:after {
+        content: '';
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        height: 0.3rem;
+        background-color: $brand-color--primary;
+    }
+}
 
 img { max-width: 100%; }
 
@@ -34,31 +47,48 @@ a {
     &:hover { text-decoration: underline; }
 }
 
+.band {
+    position: relative;
 
-.site-wrap {
-    max-width: $site--width;
-    padding: $gutter--small;
+    &--light { background-color: #eee; }
+    &--dark { background-color: #333; }
+    &--primary { background-color: $brand-color--primary; }
 }
 
+.band__content {
+    padding: 4rem 2rem;
+
+    &--center { margin: 0 auto; }
+    &--right {
+        margin-right: 0;
+        margin-left: auto;
+    }
+
+    &--small { max-width: 52.2546rem; }
+    &--medium { max-width: 75.1538rem; }
+    &--large { max-width: 1280px; }
+}
+
+
 .footer-push {
-    @extend %clearfix;
+    @include clearfix;
     min-height: calc(100% - #{$footer--height});
 }
 
-.section-wrap {
-    position: relative;
-}
-
-.section-content {
-    //padding: $gutter--small;
-    //padding-right: $gutter--large;
-    //padding-left: $gutter--large;
-}
 
 
-.section--main-content {
-    @include mq($screen--medium) {
-        float: right;
-        width: $content--width;
+.btn {
+    display: inline-block;
+    padding: 0.5em;
+    border: 3px solid #333;
+    border-radius: 4px;
+
+    &:hover {
+        text-decoration: none;
     }
+}
+
+.btn--primary {
+    border-color: $brand-color--primary;
+    color: $brand-color--primary;
 }
