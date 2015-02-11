@@ -73,6 +73,13 @@ blockquote {
     > *:last-child { margin-bottom: 0; }
 }
 
+hr {
+    border: 0;
+    border-top: 1px dashed #ccc;
+    margin: 6rem auto;
+    width: 75%;
+}
+
 @include mq($screen--small) {
    .blockquote--left {
         float: left;
