@@ -4,15 +4,17 @@
     list-style: none;
 
     li {
-        margin-top: 2rem;
         padding-top: 2rem;
-        border-top: 1px dashed #ccc;
+        padding-bottom: 2rem;
+        border-bottom: 1px dashed #ccc;
 
-        &:first-child { margin-top: 0; }
+        &:first-child { border-top: 1px dashed #ccc; }
+    }
 
-        &:last-child {
-            padding-top: 3rem;
-        }
+    .pagination {
+        padding-top: 3rem;
+        padding-bottom: 0;
+        border: 0;
     }
 }
 
@@ -28,11 +30,13 @@
 
 .post-list--compact {
     li {
-        margin-top: 1rem;
         padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
 
-        &:last-child {
-            padding-top: 2rem;
-        }
+    .pagination {
+        padding-top: 2rem;
+        padding-bottom: 0;
+        border: 0;
     }
 }
