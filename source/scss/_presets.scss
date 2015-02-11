@@ -79,16 +79,30 @@ a {
 
 .btn {
     display: inline-block;
-    padding: 0.5em;
-    border: 3px solid #333;
+    padding: 0.75em 1em;
+    border: 0;
+    background-color: #333;
     border-radius: 4px;
+    font-weight: 400;
+    color: white;
 
     &:hover {
         text-decoration: none;
     }
 }
 
+.btn--comments {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+
+    @include mq($screen--small) {
+        max-width: 50%;
+    }
+}
+
 .btn--primary {
-    border-color: $brand-color--primary;
-    color: $brand-color--primary;
+    //border-color: $brand-color--primary;
+    color: white;
+    background-color: $brand-color--primary;
 }

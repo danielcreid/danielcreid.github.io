@@ -1,14 +1,39 @@
+<button class="btn btn--comments js-load-comments">Load comments</button>
 <div id="disqus_thread"></div>
-<script type="text/javascript">
-    var disqus_shortname = 'danielcreid';
-    var disqus_title = '{{ page.title }}';
-    var disqus_url = '{{ site.url }}{{ page.url }}';
 
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
+<script type="text/javascript">
+    //var disqus_shortname = 'danielcreid';
+    //var disqus_title = '{{ page.title }}';
+    //var disqus_url = '{{ site.url }}{{ page.url }}';
+//
+    ///* * * DON'T EDIT BELOW THIS LINE * * */
+    //(function() {
+    //    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    //    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    //    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    //})();
+
+    var loadCommentsButton = document.querySelector('.js-load-comments');
+    loadCommentsButton.addEventListener('click', disqus, false);
+
+    var disqus_shortname = "danielcreid";
+    var disqus_title = "{{ page.title }}";
+    var disqus_url = "{{ site.url }}{{ page.url }}";
+    var disqus_loaded = false;
+
+    function disqus() {
+        if (!disqus_loaded)  {
+            disqus_loaded = true;
+            loadCommentsButton.style.display = 'none';
+
+            var dsq = document.createElement("script");
+            dsq.type = "text/javascript";
+            dsq.async = true;
+            dsq.src = "//" + disqus_shortname + ".disqus.com/embed.js";
+            (document.getElementsByTagName("head")[0] ||
+            document.getElementsByTagName("body")[0])
+            .appendChild(dsq);
+        }
+    }
 </script>
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
