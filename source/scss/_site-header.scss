@@ -1,7 +1,7 @@
 .site-header {
     background-image: linear-gradient(#fff 0, #eee 100%);
 
-    &__hello { margin-top: 1rem; }
+    &__hello {}
 
     &__logo {
         display: block;
@@ -25,5 +25,8 @@
         font-size: 1.8rem; //2.3rem;
     }
 
-    &__contact { margin-top: 1rem; }
+    &__contact {
+        margin-top: 1rem;
+        margin-bottom: 0;
+    }
 }

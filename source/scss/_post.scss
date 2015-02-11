@@ -1,5 +1,7 @@
 .post {
+    h2 { margin-top: 4rem; }
 
+    > *:last-child { margin-bottom: 0; }
 }
 
 .post__date {

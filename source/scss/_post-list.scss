@@ -5,8 +5,14 @@
 
     li {
         margin-top: 2rem;
+        padding-top: 2rem;
+        border-top: 1px dashed #ccc;
 
         &:first-child { margin-top: 0; }
+
+        &:last-child {
+            padding-top: 3rem;
+        }
     }
 }
 
@@ -23,7 +29,10 @@
 .post-list--compact {
     li {
         margin-top: 1rem;
+        padding-top: 1rem;
 
-        &:first-child { margin-top: 0; }
+        &:last-child {
+            padding-top: 2rem;
+        }
     }
 }
