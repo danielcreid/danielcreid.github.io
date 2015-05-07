@@ -1,8 +1,19 @@
-@import 'scss/vendor/bourbon/bourbon';
+@import 'scss/vendor/normalize';
 @import 'scss/vendor/prism';
 
 @import 'scss/utilities';
-@import 'scss/reset';
 @import 'scss/fonts';
-@import 'scss/global';
-@import 'scss/home';
+@import 'scss/presets';
+@import 'scss/typography';
+
+@import 'scss/pagination';
+@import 'scss/post-list';
+
+@import 'scss/site-header';
+@import 'scss/site-footer';
+@import 'scss/recent-posts';
+@import 'scss/post';
+
+@import 'scss/page-home';
+
+@import 'scss/overrides';

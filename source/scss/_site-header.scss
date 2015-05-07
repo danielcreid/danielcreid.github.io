@@ -1,0 +1,32 @@
+.site-header {
+    background-image: linear-gradient(#fff 0, #eee 100%);
+
+    &__hello {}
+
+    &__logo {
+        display: block;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-family: 'bebas_neueregular', 'Open Sans', sans-serif;
+        font-size: 6.4rem;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 0.925;
+
+        a {
+            color: inherit;
+            font-weight: 400;
+            text-decoration: none;
+        }
+    }
+
+    &__about {
+        margin-top: 1rem;
+        font-size: 1.8rem; //2.3rem;
+    }
+
+    &__contact {
+        margin-top: 1rem;
+        margin-bottom: 0;
+    }
+}

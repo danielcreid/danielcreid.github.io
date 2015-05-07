@@ -8,13 +8,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href="http://www.danielcreid.com/feed.xml" rel="alternate" type="application/atom+xml">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/dist/styles.css">
-    <link href="http://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" type="text/css">
 </head>
 <body class="language-markup">
-    {% include header.html %}
+    <div class="footer-push">
+       {% include header.html %}
 
-    {{ content }}
+        <section class="band">
+            <div class="band__content band__content--medium band__content--center">
+                {{ content }}
+            </div>
+        </section>
+
+        {% if page.comments %}
+        <section class="band band--light">
+            <div class="band__content band__content--medium band__content--center">
+            {% include comments.html %}
+            </div>
+        </section>
+        {% endif %}
+
+        {% if page.recent-posts %}
+        <aside class="recent-posts band">
+            <div class="band__content band__content--medium band__content--center">
+            {% include recent-posts.html %}
+            </div>
+        </aside>
+        {% endif %}
+    </div>
 
     {% include footer.html %}
 

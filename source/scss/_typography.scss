@@ -1,0 +1,97 @@
+// Typography based on the following modular scale:
+// http://modularscale.com/scale/?px1=16&px2=18&ra1=1.618&ra2=0
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+pre,
+blockquote {
+    margin: 0;
+    margin-bottom: 2rem;
+}
+
+h1,
+.h1 {
+    font-size: 4.2rem;
+    margin-bottom: 0.5rem;
+}
+
+h2,
+.h2 {
+    font-size: 3.0rem;
+    margin-bottom: 0.5rem;
+}
+
+h3,
+.h3 {
+    font-size: 2.6rem;
+    margin-bottom: 0.5rem;
+}
+
+h4,
+.h4 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+h5,
+.h5 {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+}
+
+h6,
+.h6 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+p,
+.p {
+    //margin-bottom: 1em;
+}
+
+pre[class*="language-"] {
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+blockquote {
+    margin-top: 0.5888rem;
+    padding: 2rem;
+    border-left: 3px solid #ff6b6b;
+    background-color: #eee;
+    font-style: italic;
+    color: #545454;
+
+    > *:last-child { margin-bottom: 0; }
+}
+
+hr {
+    border: 0;
+    border-top: 1px dashed #ccc;
+    margin: 6rem auto;
+    width: 75%;
+}
+
+@include mq($screen--small) {
+   .blockquote--left {
+        float: left;
+        max-width: 50%;
+        margin-right: 3.5888rem;
+        margin-bottom: 2.5888rem;
+    }
+
+    .blockquote--right {
+        float: right;
+        max-width: 50%;
+        margin-left: 3.5888rem;
+        margin-bottom: 2.5888rem;
+    }
+}
