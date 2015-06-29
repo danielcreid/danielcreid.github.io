@@ -15,6 +15,7 @@ I mainly architect CSS (Sass) for enterprise-level software. To say that I don�
 Things change. They always will and because of this I don’t agonize over initial naming choices any more. I just pick something that’s vaguely what I want. It could be verbose, short and simple, or just plain confusing. It could be the most terrible name ever. It doesn’t really matter for the short term. First I’ll get something working. Then I’ll go back and put some real effort into naming choices.
 
 At this point, it’s easier to think about what things should be called because:
+
 1. I’ve solved the UI problem already
 2. I know exactly how everything fits together
 
