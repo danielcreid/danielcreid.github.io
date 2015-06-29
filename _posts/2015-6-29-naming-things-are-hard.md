@@ -9,7 +9,7 @@ I realized that I was trying to come up with the perfect name the first time, ev
 
 So, I say that I’ve grown beyond trying to craft perfect code, but what does that really mean? Does quality matter? Do I care less about what I call things? Yes and no.
 
-I mainly architect CSS (<a href="http://sass-lang.com/">Sass</a>) for enterprise-level software. To say that I don’t care about how everything fits together would be completely false. I _deeply_ care about the quality of the codebase 100% of the time. Naming does matter. In fact, it’s one of the more important things in my opinion&mdash;especially when dealing with something so deceivingly simple as CSS. So then, what am I trying to say?
+I mainly architect CSS (<a href="http://sass-lang.com/" target="_blank">Sass</a>) for enterprise-level software. To say that I don’t care about how everything fits together would be completely false. I _deeply_ care about the quality of the codebase 100% of the time. Naming does matter. In fact, it’s one of the more important things in my opinion&mdash;especially when dealing with something so deceivingly simple as CSS. So then, what am I trying to say?
 
 ##I’ve learned to let go
 Things change. They always will and because of this I don’t agonize over initial naming choices any more. I just pick something that’s vaguely what I want. It could be verbose, short and simple, or just plain confusing. It could be the most terrible name ever. It doesn’t really matter for the short term. First I’ll get something working. Then I’ll go back and put some real effort into naming choices.
