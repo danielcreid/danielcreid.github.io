@@ -24,13 +24,13 @@ By shifting when I put effort into naming things, I actually end up spending les
 ##What was past me thinking, anyhow?
 I’ve spent a lot of time thinking about how I go about naming things. How do I refine those initial names and make them great? What’s my process like? It occurred to me that there are a few things I regularly do that allow me to come up with some high-quality names.
 
-#####Be straight-forward, specific, and super literal.
+####Be straight-forward, specific, and super literal.
 If you were going to describe a piece of UI to someone, what would you say? What purpose does it serve? Now take that short phrase and make it a class. Easy.
 
-#####Come up with a standard naming convention and stick to it.
+####Come up with a standard naming convention and stick to it.
 At work, we use a mix of BEM and SMACSS along with some namespacing. I don’t have to think as much about _how_ I name things in relation to other things because it’s already figured out. It’s a predictably simple way of doing things.
 
-#####When in doubt, leave a comment.
+####When in doubt, leave a comment.
 Or two. Or five. If you’re code isn’t straight-forward and you can’t spend the time making it as such, at least explain it as clearly as you can in the form of a comment. That way, someone else can look at your code and still know what’s up.
 
 ##Naming things are still hard
