@@ -3,7 +3,7 @@ layout: post
 title: Naming things are hard
 ---
 
-It’s something I struggle with almost every time I sit down and code. I used to agonize over it, sometimes spending far, far too much time trying to figure out what to call a “thing.” “This name has to be perfect. Anyone should be able to look at it and instantly know what this thing is for.” I’d tell myself. Oh, the time I’d waste trying to get the name to be _just right_. Eventually, I got to a point where I just had to stop, take a step back, and consider what I was really trying to achieve.
+This is something I struggle with almost every time I sit down and code. I used to agonize over it, sometimes spending far, far too much time trying to figure out what to call a “thing.” “This name has to be perfect. Anyone should be able to look at it and instantly know what this thing is for.” I’d tell myself. Oh, the time I’d waste trying to get the name to be _just right_. Eventually, I got to a point where I just had to stop, take a step back, and consider what I was really trying to achieve.
 
 I realized that I was trying to come up with the perfect name the first time, every time. Even further, I was trying to create some perfect code that would never need to be changed. I now know this to be a fool’s errand. Things change constantly and nothing will ever be 100% done and definitely never perfect.
 
@@ -11,7 +11,7 @@ So, I say that I’ve grown beyond trying to craft perfect code, but what does t
 
 I mainly architect CSS (Sass) for enterprise-level software. To say that I don’t care about how everything fits together would be completely false. I _deeply_ care about the quality of the codebase 100% of the time. Naming does matter. In fact, it’s one of the more important things in my opinion&mdash;especially when dealing with something so deceivingly simple as CSS. So then, what am I trying to say?
 
-##I’ve learned to let go.
+##I’ve learned to let go
 Things change. They always will and because of this I don’t agonize over initial naming choices any more. I just pick something that’s vaguely what I want. It could be verbose, short and simple, or just plain confusing. It could be the most terrible name ever. It doesn’t really matter for the short term. First I’ll get something working. Then I’ll go back and put some real effort into naming choices.
 
 At this point, it’s easier to think about what things should be called because:
