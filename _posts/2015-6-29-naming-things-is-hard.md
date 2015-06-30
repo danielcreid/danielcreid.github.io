@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Naming things are hard
+title: Naming things is hard
 ---
 
 This is something I struggle with almost every time I sit down and code. I used to agonize over it, sometimes spending far, far too much time trying to figure out what to call a “thing.” “This name has to be perfect. Anyone should be able to look at it and instantly know what this thing is for.” I’d tell myself. Oh, the time I’d waste trying to get the name to be _just right_. Eventually, I got to a point where I just had to stop, take a step back, and consider what I was really trying to achieve.
@@ -33,5 +33,5 @@ At work, we use a mix of BEM and SMACSS along with some namespacing. I don’t h
 ####When in doubt, leave a comment.
 Or two. Or five. If you’re code isn’t straight-forward and you can’t spend the time making it as such, at least explain it as clearly as you can in the form of a comment. That way, someone else can look at your code and still know what’s up.
 
-##Naming things are still hard
+##Naming things is still hard
 This is the unfortunate truth. Even with a few tricks&mdash;which have served me well over the years&mdash;this is still the case. It’s just something we all have to deal with. I will say that I tend to stress out less and less about naming because I rely on the techniques above. Maybe they can help you, too.
