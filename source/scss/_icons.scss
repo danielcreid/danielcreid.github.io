@@ -1,0 +1,18 @@
+// TODO: Convert font sizes to something more maintainable
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    font-size: 16px;
+    fill: currentColor;
+}
+
+// Convenient sizing classes
+.icon--small  { font-size: 16px; } // Default icon size
+.icon--medium { font-size: 24px; }
+.icon--large  { font-size: 32px; }
+
+.icon--logo {
+    width: 230px;
+    height: 45px;
+}
