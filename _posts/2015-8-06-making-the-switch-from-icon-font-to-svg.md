@@ -44,7 +44,7 @@ This allowed me to test each icon and make sure they all worked. Now, you are pr
 ##Default icon styles
 I felt like it was important that the new SVG icons could be used in a similar fashion as our icon font. To give you an idea of what it was like to use the font version, all you’d have to do is write something like this in your document:
 
-<pre><code class="language-markup">&lt;i class=&rdquo;i-settings&rdquo;&gt;&lt;/i&gt;</code></pre>
+<pre><code class="language-markup">&lt;i class=&quot;i-settings&quot;&gt;&lt;/i&gt;</code></pre>
 
 Now you have an icon. If necessary, you could also change an icon’s size and color like this:
 
