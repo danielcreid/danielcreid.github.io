@@ -5,7 +5,7 @@ title: Making the switch from icon font to SVG
 
 For the first time in a very long time, I had some free time **at work**. Crazy, I know.
 
-It’s almost never a dull moment while working for a software company. My day is usually choked full of meetings, administrative work, peer mentoring, designing interfaces, firefighting, creating prototypes, coding things, etc., but this one fateful day I actually had some time to kill. Finally, a rare opportunity to do some self-imposed, innovative work _while at work!_
+It’s almost never a dull moment while working for a software company. My day is usually chocked full of meetings, administrative work, peer mentoring, designing interfaces, firefighting, creating prototypes, coding things, etc., but this one fateful day I actually had some time to kill. Finally, a rare opportunity to do some self-imposed, innovative work _while at work!_
 
 ##What was I going to do?
 I’ve been wanting to improve our icon situation for a while now and convert our icon font to SVG. We chose to use an icon font because we had to support IE8—<a href="http://caniuse.com/#search=svg">SVG just wasn’t an option</a>. My fellow designer, <a href="https://twitter.com/elena_scherer">Elena Scherer</a>, lovingly crafted our current icon set and it sadly fell prey to some implementation limitations (namely anti-aliasing). Implementing her awesome work via icon font definitely didn’t do it justice.
